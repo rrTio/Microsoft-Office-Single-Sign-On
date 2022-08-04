@@ -74,6 +74,12 @@ function showResults($token){
     curl_close($ch);
 }
 
-showResults($tokenKey);
+if(isset($tokenKey)){
+    showResults($tokenKey);
+}
+
+else{
+    header("Location: index.php");
+}
 
 ?>
