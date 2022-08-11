@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $appid = "9ab20f24-a14e-4c5b-a9fe-f8e26698d31f";
 $tenantid = "a677e538-a995-4f46-ab69-ebe82e454fb7";
 $secret = "SF68Q~W4_oVolbz0mT23DMipAQ1wg_IKNFNt6b69";

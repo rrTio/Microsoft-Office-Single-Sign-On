@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 $tokenKey = $_SESSION['token'];
 
 //Use token to show user details via curl
@@ -40,7 +39,7 @@ function showResults($token){
     $mailNickname = $getUserArray['mailNickname'];
 
     //Print Result From Array
-    echo"
+    echo strip_tags("
 
     <html>
         <head>
@@ -69,7 +68,7 @@ function showResults($token){
         </body>
     </html>
 
-    ";
+    ", "<html><head><body><center><h1><h2><h4>");
 
     curl_close($ch);
 }
